@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 RUN npm install @supabase/supabase-js @supabase/ssr jsonwebtoken --save-dev
+RUN npm install @amcharts/amcharts5
+RUN npm install @amcharts/amcharts5-geodata
+RUN npm install @amcharts/amcharts5-fonts
 
 # Copy the rest of the application code
 COPY . .
